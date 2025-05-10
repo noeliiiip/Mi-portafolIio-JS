@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio JavaScript</title>
+    <style>
+
+        body {
+            background-color: lightblue; /* Color de fondo azul claro */
+
+            font-family: sans-serif; /* Fuente de texto más legible */
+
+            display: flex; /* Para centrar el contenido */
+
+            flex-direction: column; /* Alinear elementos verticalmente */
+
+            align-items: center; /* Centrar horizontalmente */
+
+            justify-content: center; /* Centrar verticalmente en la pantalla */
+
+            min-height: 100vh; /* Asegurar que el fondo cubra toda la pantalla */
+
+            margin: 0; /* Eliminar márgenes predeterminados del body */
+
+            padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+
+            box-sizing: border-box; /* Incluir el padding y el border en el ancho y alto */
+        }
+
+        img {
+            max-width: 1200px; /* Ancho máximo de la imagen para que no sea demasiado grande */
+
+            height: auto; /* Mantener la proporción de la imagen */
+
+            margin-bottom: 20px; /* Espacio debajo de la imagen */
+        }
+
+        .info-container {
+            text-align: justify-all; /* Centrar el texto dentro del contenedor */
+
+            background-color: white; /* Fondo blanco para el contenedor de información */
+
+            padding: 30px; /* Espacio dentro del contenedor */
+
+            border-radius: 10px; /* Bordes redondeados para el contenedor */
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
+        }
+
+        h1 {
+            color: #333; /* Color de texto oscuro para el título */
+
+            margin-bottom: 10px; /* Espacio debajo del título */
+        }
+
+        p {
+            color: #555; /* Color de texto un poco más claro para el resto de la información */
+
+            margin-bottom: 5px; /* Espacio entre párrafos */
+        }
+
+        strong {
+            color: #007bff; /* Color destacado para las etiquetas strong */
+        }
+
+        marquee {
+            width: 100%; /* O el ancho que desees */
+
+            background-color: #f0f0f0; /* Un color de fondo suave para la marquesina */
+
+            padding: 10px 0; /* Un poco de espacio arriba y abajo */
+
+            margin-bottom: 15px; /* Espacio debajo de la marquesina */
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left">
+
+        ¡Bienvenido a Mi Portafolio JavaScript!
+    </marquee>
+    <div class="info-container">
+        <img src=https://laureate-comunicacion.com/prensa/wp-content/uploads/2021/04/UVM-Lomas-Verdes.png>
+        <script>
+
+            // Título del proyecto
+
+            const tituloProyecto = "Mi Portafolio JavaScript";
+
+            // Nombres de los integrantes del equipo
+
+            const integrantesEquipo = [
+
+                "Natalia Ceja",
+
+                "Fatima Flores",
+
+                "Ximena Hernández",
+
+                "Noeli Pérez Calles",
+
+                "Camila Suárez"
+
+            ];
+
+            // Campus
+
+            const campus = "UVM Lomas Verdes";
+
+            // Nombre del docente
+
+            const docente = "Juan Ramon Urban Oropeza";
+
+            // Mostrar la información en la página
+
+            document.write("<h1>" + tituloProyecto + "</h1>");
+
+            document.write("<p><strong>Integrantes del equipo:</strong> " + integrantesEquipo.join(", ") + "</p>");
+
+            document.write("<p><strong>Campus:</strong> " + campus + "</p>");
+
+            document.write("<p><strong>Docente:</strong> " + docente + "</p>");
+        </script>
+    </div>
+</body>
+</html>
